@@ -54,7 +54,10 @@ function buildMetadata(sample) {
         mode: 'markers',
         marker: {
           size: otu_sample,
-          color: otu_id
+          color: otu_id,
+          cmin:0,
+          cmax:3500,
+          colorscale: 'Rainbow'
         },
         type: 'bubble',
         text: otu_labels
